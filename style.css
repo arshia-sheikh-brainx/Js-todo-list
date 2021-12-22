@@ -19,21 +19,21 @@ body {
   font-size: 40px;
   font-weight: 900;
 }
-input {
+#addTodoItem {
   width: 100%;
   border: 2px solid #f0f0f0;
   padding: 10px 5px;
   font-size: 20px;
 }
-hr {
+.container hr {
   background-color: #f0f0f0;
   border: 1px solid #f0f0f0;
   margin-top: 2rem;
 }
-ul {
+#listContainer {
   padding-left: 0;
 }
-li {
+#listContainer li {
   list-style-type: none;
   text-align: left;
   position: relative;
@@ -42,12 +42,12 @@ li {
 
   border-bottom: 1px solid black;
 }
-li input[type="checkbox"] {
+#listContainer li input[type="checkbox"] {
   width: max-content;
   vertical-align: sub;
   cursor: pointer;
 }
-li span {
+#listContainer li span {
   vertical-align: middle;
 }
 .del {
@@ -77,7 +77,7 @@ height: auto;
  box-sizing: border-box;
 min-width: 100%;
 }
-input {
+#addTodoItem {
 font-size: 14px;
 }
 }

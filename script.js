@@ -1,5 +1,5 @@
-let addTodoItem =document.getElementById("addTodoItem");
-let listClass=document.getElementById("listClass")
+const addTodoItem =document.getElementById("addTodoItem");
+const listContainer=document.getElementById("listContainer")
 addTodoItem.addEventListener("keypress", (e)=>{
 if(e.key=="Enter"){
     addItem(e);
@@ -9,7 +9,7 @@ if(e.key=="Enter"){
 function addItem(e){
     if(e.target.value!==""){
         let text=e.target.value;
-        e.target.value=""
+        e.target.value="";
         let li = document.createElement("li");
         let checkbox=document.createElement("INPUT");
         checkbox.setAttribute("type", "checkbox");
@@ -30,7 +30,7 @@ function addItem(e){
         });
         
         li.append(checkbox,span,editIcon,delIcon);  
-        listClass.append(li);  
+        listContainer.append(li);  
     }
 }
 //checkbox check
@@ -68,7 +68,7 @@ function changeText(e,check){
             span.classList.add("line-througth");
         }
         listItem.replaceChild(span,e.target);
-        check.style.display="inline-block"
+        check.style.display="inline-block";
     }
    
 }
